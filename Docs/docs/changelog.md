@@ -2,17 +2,34 @@
 
 Version history / release notes for each release. 
 
+## Version 1.0.4
+
+Fixes:
+
+* Fixed CTRL+E keyboard (Export Audio) shortcut that was not hooked up 
+* Fixed playback inconsistencies when copy/pasting generator parameters with envelopes
+* Fixed wave tables using multiple waves not immediately restarting at wave #0
+
+Changes:
+
+* Added ability to display multiple channels as ghost notes
+* Added clear undo/redo on save and autosave options on mobile.
+* Added support for dragging MIDI files in the window to open them on desktop
+* Added support to save some UI settings (splitter positions, expanded sections, snapping options, etc) so they can persist when restarting the app
+* Added Portuguese translation (Thanks Sharper and Omega Zero!)
+* Upgraded Built-in GeneralUser GS Soundfont to 2.0.3 and improved the quality of looping samples.
+
 [](){#version-103-hotfix}
 ## Version 1.0.3
 
-Changes/Fixes:
+Fixes:
 
 * Fixed crash moving notes on top of each other introduced in 1.0.2
 
 [](){#version-102-hotfix}
 ## Version 1.0.2
 
-Changes/Fixes:
+Fixes:
 
 * Fixed crash trying to play notes without instruments (gray)
 * Fixed crash playing audio after undo/redo a set/clear loop point
@@ -22,6 +39,9 @@ Changes/Fixes:
 * Fixed a few crashes and issues on tablet when the bottom panel becomes too small with certain scalings
 * Fixed files not truncating on Android, meaning they would only grow in size, never shrink
 * Fixed notes in instanced patterns loosing their selection in the piano roll when moving them
+
+Changes:
+
 * Improved overzealous fling gesture on IOS causing views to always scroll a bit after lifting your finger.
 * Added a few error messages when failing to open project files (new version, corrupted, etc.)
 * Added list of already loaded soundfonts to avoid having to having to constantly open from storage
@@ -37,7 +57,7 @@ Changes/Fixes:
 [](){#version-101-hotfix}
 ## Version 1.0.1
 
-Changes/Fixes:
+Fixes:
 
 * Fixed incorrect automation track value when starting the song exactly on a vertex that is alone in a pattern
 * Fixed crash using "select all" in a Sequence automation
@@ -59,6 +79,9 @@ Changes/Fixes:
 * Fixed wavetable playing at wrong frequency after a changing the table size
 * Fixed incorrect envelope delay on custom curves
 * Fixed window being not-resizable on MacOS, or having the wrong size when maximized
+
+Changes:
+
 * Greyed out the preset min/max when not using a preset (i.e. Custom)
 * Changed the min/max frequencies for the EQ so that all frequencies are accessible
 * Allowed Project Explorer to be almost 40% smaller.
@@ -68,7 +91,7 @@ Changes/Fixes:
 
 Breaking/Behavior changes:
 
-* The file format has changed, meaning file saved with version 1.0.1 will not open in 1.0.0. This usually never happens in a hotfix, but we are in the early days of the app and I will need to make a few exceptions.
+* The file format has changed, meaning file saved with version 1.0.1 will not open in 1.0.0. This usually never happens in a minor (last digit) update, but we are in the early days of the app and I will need to make a few exceptions.
 
 ## Version 1.0.0
 
